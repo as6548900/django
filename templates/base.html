@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>訊息系統</title>
+	{% load static %}
+	<link href="{% static "style.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="warp">
+		<div id="header">
+		
+			 <div class="logo">
+				<img src="{% static "images/ai.jpg" %}" width="180" height="40" alt="news" />
+			</div>
+		</div>
+		<div class="headings">
+			<h2>AI 人工智慧</h2>
+		</div>  
+		{% block content %}{% endblock %}
+		<div id="footer">&copy; Copyright 2017 eHappy Studio 重要公告</div>
+	</div>
+</body>
+</html>
